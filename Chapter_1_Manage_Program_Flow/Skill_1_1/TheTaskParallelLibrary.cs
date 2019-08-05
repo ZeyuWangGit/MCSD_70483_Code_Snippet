@@ -17,7 +17,7 @@ namespace Chapter_1_Manage_Program_Flow.Skill_1_1
         
         //Test for Parallel Invoke
         [Test]
-        public void CodeForParallelInvoke()
+        public void TestForParallelInvoke()
         {
             Parallel.Invoke(TaskForParallelInvoke_1, TaskForParallelInvoke_2);
             SampleContentForParallelInvoke.ShouldBeOneOf(new string[]
@@ -25,6 +25,11 @@ namespace Chapter_1_Manage_Program_Flow.Skill_1_1
                 "1342",
                 "3142"
             });
+        }
+
+        public void TestForParallelForEach()
+        {
+
         }
 
         private void TaskForParallelInvoke_1()
